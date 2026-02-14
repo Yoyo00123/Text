@@ -8,7 +8,7 @@ const axios = require("axios");
 
 const backgroundImages = [
     "https://imgur.com/a/98dh61i",
-    "",
+    "https://files.catbox.moe/7hvel8.gif",
     "",
     "",
     "",
