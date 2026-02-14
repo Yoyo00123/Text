@@ -41,14 +41,14 @@ function getBDDate() {
   );
 }
 
-const BOT_NAME = "X69X BOT V2"; // Don't Change 
-const PREFIX_CHECK_GIF = "https://files.catbox.moe/ddo1rt.gif";
+const BOT_NAME = "𝙕𝙖𝙈𝙖𝙎𝙪𒆜"; // Don't Change 
+const PREFIX_CHECK_GIF = "https://files.catbox.moe/m0gulk.gif";
 
 module.exports = {
   config: {
     name: "prefix",
     version: "2.3",
-    author: "Azadx69x",
+    author: "Nahid Bro",
     countDown: 5,
     role: 0,
     description: "Change or check bot prefix in your chat or globally group",
