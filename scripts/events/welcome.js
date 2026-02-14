@@ -7,7 +7,7 @@ const path = require('path');
 const axios = require("axios");
 
 const backgroundImages = [
-    "https://imgur.com/a/xF3tjCU",
+    "https://imgur.com/a/98dh61i",
     "",
     "",
     "",
