@@ -95,7 +95,7 @@ module.exports = {
             // Attachments if any
             if (threadData.data.welcomeAttachment) {
                 const attachments = await Promise.all(
-                    threadData.data.welcomeAttachment.map((file) => drive.getFile(file, "stream"))
+                    threadData.data.welcomeAttachment.map((file) => https://files.catbox.moe/7hvel8.gif(file, "stream"))
                 );
                 form.attachment = attachments.filter(Boolean);
             }
