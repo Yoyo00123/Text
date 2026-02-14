@@ -49,7 +49,7 @@
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "nickNameBot": "X69X BOT V2",
-  "prefix": ")",
+  "prefix": "👺",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
