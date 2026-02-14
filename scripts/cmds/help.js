@@ -142,7 +142,7 @@ module.exports = {
   config: {
     name: "help",
     version: "2.4",
-    author: "Azadx69x",
+    author: "",
     role: 0,
     countDown: 5,
     description: { 
@@ -187,15 +187,8 @@ module.exports = {
         cfg.aliases.map(a => `${prefix}${a}`).join(", ") : 
         "❌ 𝗡𝗼𝗻𝗲";
 
-      const helpMessage = `┍━━━[ 📚 𝗫𝟲𝟵𝗫 𝗕𝗢𝗧 𝗛𝗘𝗟𝗣 ]━━━◊
-┋➥ 📛 𝗡𝗮𝗺𝗲: ${prefix}${cfg.name}
-┋➥ 🗂️ 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆: ${categoryEmoji(cfg.category || "other")} ${cfg.category || "❌ 𝗨𝗻𝗰𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝘇𝗲𝗱"}
-┋➥ 📄 𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: ${desc}
-┋➥ ⚙️ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ${cfg.version || "1.0"}
-┋➥ ⏳ 𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻: ${cfg.countDown || 1}s
-┋➥ 🔒 𝗥𝗼𝗹𝗲: ${cfg.role === 0 ? "👤 𝗔𝗹𝗹" : cfg.role === 1 ? "👑 𝗔𝗱𝗺𝗶𝗻" : "⚡ 𝗢𝘄𝗻𝗲𝗿"}
-┋➥ 👑 𝗔𝘂𝘁𝗵𝗼𝗿: ${cfg.author || "❌ 𝗨𝗻𝗸𝗻𝗼𝘄𝗻"}
-┋➥ 🔤 𝗔𝗹𝗶𝗮𝘀𝗲𝘀: ${aliasesList}
+      const helpMessage
+
 ┍━━━[ 📘 𝗨𝗦𝗔𝗚𝗘 ]━━━◊
 ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
 ┍━━━[ 💡 𝗡𝗢𝗧𝗘𝗦 ]━━━◊
@@ -208,7 +201,7 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
       try {
         await message.reply({
           body: helpMessage,
-          attachment: await global.utils.getStreamFromURL("https://i.ibb.co/5X9T2dDN/image0.gif")
+          attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/i1n7qy.gif")
         });
       } catch (error) {
         console.log("GIF attachment failed, sending text only:", error);
@@ -225,7 +218,7 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
       categories[cat].push(c.config.name);
     }
 
-    let msg = `┍━━━[ 📚 𝗫𝟲𝟵𝗫 𝗕𝗢𝗧 𝗠𝗘𝗡𝗨  ]━━━◊\n`;
+    let msg = 
       
     const sortedCategories = Object.keys(categories).sort();
     
@@ -246,25 +239,19 @@ ${usage.split('\n').map(line => `┋➥ ${line}`).join('\n')}
         msg += line + "\n";
       }
       
-      msg += "┕━━━━━━━━━━━━━━━━━━━━━━◊\n";
+      msg += "help korte parbo na,muri kha\n";
     }
 
     const totalCommands = Object.values(categories).flat().length;
     msg += `┍━━━[ 📊 𝗦𝗧𝗔𝗧𝗦 ]━━━◊
 ┋➥ 𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: ${totalCommands}
 ┋➥ 𝗧𝗼𝘁𝗮𝗹 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝗲𝘀: ${sortedCategories.length}
-┋➥ 𝗔𝗹𝗹 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗶𝗻 𝗼𝗻𝗲 𝗽𝗮𝗴𝗲
-┍━━━[ 🚀 𝗜𝗡𝗙𝗢 ]━━━◊
-┋➥ 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝗫𝟲𝟵𝗫 𝗕𝗼𝘁!
-┋➥ 𝗣𝗿𝗲𝗳𝗶𝘅: [ ${prefix} ]
-┋➥ 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿: 𝗔𝘇𝗮𝗱𝘅𝟲𝟵𝘅
-┋➥ 𝗨𝘀𝗲: ${prefix}𝗵𝗲𝗹𝗽 <𝗰𝗼𝗺𝗺𝗮𝗻𝗱>
-┕━━━━━━━━━━━━━━━━━━━━━━◊`;
+
       
     try {
       await message.reply({
         body: msg,
-        attachment: await global.utils.getStreamFromURL("https://i.ibb.co/5X9T2dDN/image0.gif")
+        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/i1n7qy.gif")
       });
     } catch (error) {
       console.log("GIF attachment failed, sending text only:", error);
